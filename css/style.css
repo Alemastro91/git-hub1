@@ -105,8 +105,7 @@ h3 {
 }
 
 
-.imagenes-index,
-img {
+.imagenes-index, img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -118,24 +117,46 @@ img {
     grid-area: imag;
 }
 
-.videoResumen{
-    grid-area: vide;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding-left: 50rem;
-    margin-right: 1rem;
-}
-
-.reCap, .tituloVideo{
+.video-container {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding-left: 50rem;
+    justify-content:center;
+    margin-right: 1rem;
+    grid-area: vide;
+}
+
+.reCap,
+.tituloVideo {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 }
 
 footer {
-    grid-area: foot;
+    display: flex;
+    flex-direction: row;
+    
+    background-color: #000000;
+    background-image: linear-gradient(200deg, #000000 30%, #b82e1f 90%);
+    border-radius: 20px;
+    grid-template-areas: foot;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    max-height: 300px;
+    justify-content: right;
+}
+
+.textFoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0.3rem;
+    font-size: 1.8rem;
+    text-align: left;
 }
 
 .main-hawkins {
@@ -176,13 +197,12 @@ footer {
 /*-----Escritorio-----*/
 
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr 2fr 1fr;
-  grid-template-areas: 
-  "imag"
-  "vide"
-  "foot";
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    grid-template-rows: 1fr 0.5fr 0.2fr;
+    grid-template-areas:
+    "imag vide"
+    "foot foot";
 }
 
 .main-hawkins {
@@ -193,17 +213,13 @@ main {
         "dat1 dat2 map";
 }
 
-iframe {
-    display: flex;
-    flex-direction: column;
-}
 
 /*-------Mobile--------*/
 
 @media screen and (max-width: 768px) {
     body {
         background-image: url(../img/background.png);
-    }   
+    }
 
     .intro {
         display: flex;
@@ -228,21 +244,22 @@ iframe {
         color: white;
         hyphenate-character: none;
     }
-        
-    .principal, .video-container{
+
+    .principal,
+    .video-container {
         display: flex;
-        flex-direction: column;  
-        align-items: center;      
+        flex-direction: column;
+        align-items: center;
         align-content: center;
     }
 
-    .video-container{
+    .video-container {
         display: flex;
         flex-direction: column;
         padding-top: 50rem;
     }
 
-    .videoResumen{
+    .videoResumen {
         display: flex;
         flex-direction: column;
         margin-top: 0.5rem;
@@ -250,7 +267,8 @@ iframe {
         padding-right: 0.3rem;
     }
 
-    .tituloVideo, .reCap{
+    .tituloVideo,
+    .reCap {
         display: flex;
         flex-direction: column;
         font-size: 1.5rem;
@@ -280,10 +298,10 @@ iframe {
     .textFoot {
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         padding-left: 0.3rem;
         font-size: 1.8rem;
-        text-align:left;
+        text-align: left;
     }
 }
 
