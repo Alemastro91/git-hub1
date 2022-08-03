@@ -280,7 +280,7 @@ iframe {
         display: flex;
         align-items:center;
         padding-left: 0.9rem;
-        font-size: 2rem;
+        font-size: 1rem;
         text-align: left;
     }
 }
