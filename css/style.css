@@ -105,10 +105,9 @@ h3 {
 }
 
 
-.imagenes-index, img {
+.imagenes-index, img{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     border-radius: 25px;
     max-width: 30rem;
     max-height: 20rem;
@@ -120,8 +119,7 @@ h3 {
 .video-container {
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    margin-right: 1rem;
+    padding-right: 2rem;
     grid-area: vide;
 }
 
@@ -135,7 +133,6 @@ h3 {
 footer {
     display: flex;
     flex-direction: row;
-    
     background-color: #000000;
     background-image: linear-gradient(200deg, #000000 30%, #b82e1f 90%);
     border-radius: 20px;
@@ -147,7 +144,7 @@ footer {
     flex-direction: column;
     max-width: 300px;
     max-height: 300px;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .textFoot {
@@ -201,8 +198,9 @@ main {
     grid-template-columns: 1fr 0.2fr;
     grid-template-rows: 1fr 0.5fr 0.2fr;
     grid-template-areas:
-    "imag vide"
-    "foot foot";
+    "imag vide";
+
+    
 }
 
 .main-hawkins {
@@ -245,18 +243,24 @@ main {
         hyphenate-character: none;
     }
 
-    .principal,
-    .video-container {
+    .principal, .imagenes-index, .video-container{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        align-content: center;
+        align-items: center;  
     }
+
+    /*
+    .imagenes-index{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }*/
 
     .video-container {
         display: flex;
         flex-direction: column;
-        padding-top: 50rem;
+        margin-top: 63rem;
+        padding-right: 0;
     }
 
     .videoResumen {
@@ -273,8 +277,8 @@ main {
         flex-direction: column;
         font-size: 1.5rem;
         text-align: center;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
     }
 
     footer {
