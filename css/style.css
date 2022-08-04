@@ -12,7 +12,9 @@ body {
 }
 
 .tittle {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 550;
     background-image: url(../img/banner.jpeg);
     background-size: cover;
     background-position-y: 40%;
@@ -47,7 +49,7 @@ nav .bordeBotones li {
 
 .menuBar ul li {
     display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     line-height: 1rem;
     padding: 1.2rem;
@@ -83,6 +85,8 @@ li,
 
 .intro {
     color: rgb(219, 230, 240);
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
     text-align: center;
     border: .2rem solid white;
     margin: 1rem 2rem;
@@ -116,7 +120,7 @@ h3 {
     grid-area: imag;
 }
 
-.video-container {
+.video-contendor {
     display: flex;
     flex-direction: column;
     padding-right: 2rem;
@@ -130,7 +134,8 @@ h3 {
     text-align: right;
 }
 
-footer {
+
+footer{
     display: flex;
     flex-direction: row;
     background-color: #000000;
@@ -141,7 +146,8 @@ footer {
 
 .map {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-right: 0em;
     max-width: 300px;
     max-height: 300px;
     justify-content: flex-end;
@@ -198,7 +204,8 @@ main {
     grid-template-columns: 1fr 0.2fr;
     grid-template-rows: 1fr 0.5fr 0.2fr;
     grid-template-areas:
-    "imag vide";
+    "imag vide" 
+    "foot foot";
 
     
 }
@@ -243,7 +250,7 @@ main {
         hyphenate-character: none;
     }
 
-    .principal, .imagenes-index, .video-container{
+    .principal, .imagenes-index, .video-contendor{
         display: flex;
         flex-direction: column;
         align-items: center;  
@@ -256,7 +263,7 @@ main {
         justify-content: space-between;
     }*/
 
-    .video-container {
+    .video-contendor {
         display: flex;
         flex-direction: column;
         margin-top: 63rem;
@@ -277,8 +284,8 @@ main {
         flex-direction: column;
         font-size: 1.5rem;
         text-align: center;
-        padding-left: 0.9rem;
-        padding-right: 0.9rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     footer {
@@ -294,7 +301,7 @@ main {
         display: flex;
         max-width: 300px;
         max-height: 300px;
-        justify-content: space-between;
+        
         align-items: flex-end;
         align-content: flex-end;
     }
