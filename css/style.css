@@ -113,25 +113,43 @@ h3 {
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    max-width: 30rem;
-    max-height: 20rem;
+    max-width: 55rem;
+    max-height: 55rem;
     padding: .2rem;
     margin: .2rem;
     grid-area: imag;
 }
 
-.video-contendor {
+.video-contendor{
     display: flex;
     flex-direction: column;
-    padding-right: 2rem;
+    
+}
+
+.tituloVideo{
+    display: flex;
+    flex-direction: column;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    
     grid-area: vide;
 }
 
-.reCap,
-.tituloVideo {
+.videoResumen {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    padding-right: 1rem; 
+
+}
+
+.resumenAbajo, .reCap{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
 }
 
 
@@ -199,16 +217,13 @@ footer{
 
 /*-----Escritorio-----*/
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 0.2fr;
-    grid-template-rows: 1fr 0.5fr 0.2fr;
+.principal{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2fr 1fr;
     grid-template-areas:
-    "imag vide" 
-    "foot foot";
-
-    
-}
+    "imag vide";
+}   
 
 .main-hawkins {
     display: grid;
@@ -256,18 +271,21 @@ main {
         align-items: center;  
     }
 
-    /*
     .imagenes-index{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }*/
+    }
 
     .video-contendor {
         display: flex;
         flex-direction: column;
-        margin-top: 63rem;
         padding-right: 0;
+    }
+
+    video{
+        min-width: 60rem;
+        min-height: 34rem;
     }
 
     .videoResumen {
