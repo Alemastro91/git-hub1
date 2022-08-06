@@ -13,7 +13,7 @@ body {
 
 .tittle {
     font-size: 5rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 550;
     background-image: url(../img/banner.jpeg);
     background-size: cover;
@@ -49,7 +49,7 @@ nav .bordeBotones li {
 
 .menuBar ul li {
     display: inline-block;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     line-height: 1rem;
     padding: 1.2rem;
@@ -85,16 +85,18 @@ li,
 
 .intro {
     color: rgb(219, 230, 240);
-    font-family:'Courier New', Courier, monospace;
-    font-weight:bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     text-align: center;
     border: .2rem solid white;
     margin: 1rem 2rem;
     padding: 1rem;
     margin-bottom: 80px;
-    font-size: .9rem;
 }
 
+.texIntro{
+    font-size: 1.8rem;
+}
 
 h3 {
     color: bisque;
@@ -102,82 +104,92 @@ h3 {
     font-size: 1.5rem;
 }
 
-.textFoot {
-    color: white;
-    font-size: 1.2rem;
-    text-align: left;
-}
-
-
-.imagenes-index, img{
+.imagenes-index{
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    max-width: 55rem;
-    max-height: 55rem;
-    padding: .2rem;
-    margin: .2rem;
+    max-width: 50rem;
+    max-height: 35rem;
+    margin-top: 3.4rem;
+    margin-left: 3rem;
+    padding-left: .9rem;
+    padding-right: .9rem;
     grid-area: imag;
 }
 
 .video-contendor{
     display: flex;
     flex-direction: column;
-    
-}
+    text-align: center;
 
-.tituloVideo{
-    display: flex;
-    flex-direction: column;
-}
-
-.video{
-    display: flex;
-    flex-direction: column;
-    
-    grid-area: vide;
 }
 
 .videoResumen {
     display: flex;
     flex-direction: column;
-    padding-right: 1rem; 
-
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.2%;
+    margin-bottom: 20px;
+    margin-top: 1rem;
 }
 
-.resumenAbajo, .reCap{
+.videoResumen iframe {
     display: flex;
     flex-direction: column;
-    text-align: center;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
 }
 
+.resumenAbajo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    grid-area: reca;
+}
 
-footer{
+.reCap{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+footer {
     display: flex;
     flex-direction: row;
+    align-content: space-between;
+    align-items: center;
     background-color: #000000;
     background-image: linear-gradient(200deg, #000000 30%, #b82e1f 90%);
-    border-radius: 20px;
-    grid-template-areas: foot;
+    border-radius: 25px;
+    
 }
 
 .map {
     display: flex;
     flex-direction: row;
-    margin-right: 0em;
-    max-width: 300px;
-    max-height: 300px;
-    justify-content: flex-end;
+    max-width: 30rem;
+    max-height: 15rem;
+    grid-area: map;
+
 }
 
 .textFoot {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     padding-left: 0.3rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: left;
+    color: white;
+    grid-area: foot;
+
 }
 
 .main-hawkins {
@@ -217,34 +229,40 @@ footer{
 
 /*-----Escritorio-----*/
 
-.principal{
-    display:grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 2fr 1fr;
+.principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
-    "imag vide";
-}   
+    "imag vide"
+    "reca reca"
+   
+}
 
 .main-hawkins {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "dat1 dat2 map";
+     "dat1 dat2 map";
 }
-
 
 /*-------Mobile--------*/
 
 @media screen and (max-width: 768px) {
     body {
         background-image: url(../img/background.png);
+        justify-content: center;
+    }
+
+    .tittle{
+        font-size: 4rem;
     }
 
     .intro {
         display: flex;
         flex-direction: column;
-        font-size: 1.1rem;
+        font-size: 1.7rem;
         text-align: center;
     }
 
@@ -265,15 +283,21 @@ footer{
         hyphenate-character: none;
     }
 
-    .principal, .imagenes-index, .video-contendor{
+    .principal,
+    .imagenes-index,
+    .video-contendor {
         display: flex;
         flex-direction: column;
-        align-items: center;  
+        align-items: center;
     }
 
-    .imagenes-index{
+    .imagenes-index {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        margin: 0;
         justify-content: space-between;
     }
 
@@ -283,17 +307,14 @@ footer{
         padding-right: 0;
     }
 
-    video{
-        min-width: 60rem;
-        min-height: 34rem;
-    }
-
     .videoResumen {
         display: flex;
         flex-direction: column;
         margin-top: 0.5rem;
         padding-left: 0.3rem;
         padding-right: 0.3rem;
+        width: 400px;
+        height: auto;
     }
 
     .tituloVideo,
@@ -317,9 +338,8 @@ footer{
 
     .map {
         display: flex;
-        max-width: 300px;
-        max-height: 300px;
-        
+        max-width: 15rem;
+        max-height: 15rem;
         align-items: flex-end;
         align-content: flex-end;
     }
