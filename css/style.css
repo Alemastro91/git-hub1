@@ -161,7 +161,7 @@ h3 {
     padding-right: 4rem;
 }
 
-footer {
+footer{
     display: flex;
     flex-direction: row;
     background-color: #000000;
@@ -170,12 +170,11 @@ footer {
     grid-area: foot;
     align-items: center;
     justify-content: space-between;
-
 }
 
-.map iframe {
+.map{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 15rem;
     max-height: 15rem;
 }
@@ -191,12 +190,15 @@ footer {
 
 }
 
+/*--------Hawkins--------–÷*/
+
 .main-hawkins {
     display: flex;
     flex-direction: column;
     color: antiquewhite;
     margin: 4rem;
     align-items: center;
+    
 }
 
 .imag-mapa,
@@ -260,6 +262,8 @@ p {
 }
 
 /*-------Mobile--------*/
+
+/*--------Mobile---------*/
 
 @media screen and (max-width: 768px) {
     body {
@@ -363,7 +367,7 @@ p {
         grid-area: foot;
         align-items: center;
         justify-content: space-around;
-        width: 200px;
+        
     }
 
     .map iframe{
@@ -372,6 +376,7 @@ p {
         justify-content: center;
         width: 180px;
         height: 150px;
+        border-radius: 10%;
     }
 
     .textFoot p {
