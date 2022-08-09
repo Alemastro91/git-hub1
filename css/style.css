@@ -55,8 +55,7 @@ nav .bordeBotones li {
     font-size: 25px;
     line-height: 1rem;
     padding: 1.2rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    
     background-image: url(../img/button1.png);
     background-size: 100%;
     background-position-y: center;
@@ -91,12 +90,12 @@ li,
     font-weight: bold;
     text-align: center;
     border: .2rem solid white;
-    margin: 1rem 2rem;
+    margin: 1rem;
     padding: 1rem;
     margin-bottom: 80px;
 }
 
-.texIntro{
+.texIntro {
     font-size: 1.8rem;
 }
 
@@ -106,7 +105,7 @@ h3 {
     font-size: 1.5rem;
 }
 
-.imagenes-index{
+.imagenes-index {
     display: flex;
     flex-direction: column;
     border-radius: 25px;
@@ -119,7 +118,7 @@ h3 {
     grid-area: imag;
 }
 
-.video-contendor{
+.video-contendor {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -147,7 +146,7 @@ h3 {
     height: 95%;
 }
 
-.resumenAbajo{
+.resumenAbajo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,12 +156,12 @@ h3 {
     grid-area: reca;
 }
 
-.reCap{
+.reCap {
     padding-left: 4rem;
     padding-right: 4rem;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: row;
     background-color: #000000;
@@ -170,37 +169,38 @@ footer{
     border-radius: 25px;
     grid-area: foot;
     align-items: center;
-    justify-content:space-between;  
+    justify-content: space-between;
 
 }
 
-.map iframe{
+.map iframe {
     display: flex;
-    flex-direction: row; 
-    max-width: 15rem;    
+    flex-direction: row;
+    max-width: 15rem;
     max-height: 15rem;
 }
 
-.textFoot{
+.textFoot {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     font-size: 1.9rem;
     text-align: left;
     color: white;
     padding-left: 1rem;
     align-items: center;
-    
+
 }
 
-.main-hawkins{
+.main-hawkins {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     color: antiquewhite;
     margin: 4rem;
     align-items: center;
 }
 
-.imag-mapa, .imag-sch{
+.imag-mapa,
+.imag-sch {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -209,21 +209,24 @@ footer{
     width: 36rem;
     width: 36rem;
 }
- 
-h1{
+
+h1 {
     text-align: center;
 }
 
-.datos1, p{
+.datos1,
+p {
     display: flex;
     flex-direction: column;
     font-size: 1.3rem;
     color: bisque;
-    grid-area: dat1;;
+    grid-area: dat1;
+    ;
     text-align: center;
 }
 
-.datos2, p{
+.datos2,
+p {
     display: flex;
     flex-direction: column;
     font-size: 1.3rem;
@@ -233,8 +236,9 @@ h1{
 }
 
 
-/*-----Escritorio-----*/
+/*-----Escritorio -Gird-----*/
 
+/*
 .principal {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -244,6 +248,7 @@ h1{
     "reca reca"
     "foot foot";
 }
+*/
 
 /*
 .main-hawkins {
@@ -262,8 +267,23 @@ h1{
         justify-content: center;
     }
 
-    .tittle{
-        font-size: 4rem;
+    .tittle {
+        font-size: 3rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 550;
+        background-image: url(../img/banner.jpeg);
+        background-size: cover;
+        background-position-y: 40%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        color: whitesmoke;
+        background-color: rgb(29, 14, 14);
+        text-align: center;
+        padding: 2.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1;
     }
 
     .intro {
@@ -306,6 +326,7 @@ h1{
         padding-right: 0.6rem;
         margin: 0;
         justify-content: space-between;
+        width: 22rem;
     }
 
     .video-contendor {
@@ -320,87 +341,90 @@ h1{
         margin-top: 0.5rem;
         padding-left: 0.3rem;
         padding-right: 0.3rem;
-        width: 400px;
-        height: auto;
+        width: 22rem;
     }
 
     .tituloVideo,
     .reCap {
         display: flex;
         flex-direction: column;
-        font-size: 1.5rem;
+        font-size: 1.rem;
         text-align: center;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
 
-    footer{
+    footer {
         display: flex;
         flex-direction: row;
-        margin-top: 1rem;
         background-color: #000000;
         background-image: linear-gradient(200deg, #000000 30%, #b82e1f 90%);
-        border-radius: 20px;
+        border-radius: 25px;
+        grid-area: foot;
         align-items: center;
-        align-content: flex-end;
-        height: 15rem;
+        justify-content: space-around;
+        width: 200px;
     }
 
-    .map{
-        display: flex;
-        width: 14.5rem;
-        height: 14.5rem;
-    }
-
-    .textFoot{
+    .map iframe{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-        font-size: 1rem;
+        width: 180px;
+        height: 150px;
+    }
+
+    .textFoot p {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        font-size: 0.9rem;
         text-align: left;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .main-hawkins{
+    .main-hawkins {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         color: antiquewhite;
         margin: 4rem;
         align-items: center;
     }
 
-    h1{
+    h1 {
         text-align: center;
-    }
-    
-    .datos1, .txtt{
-        display: flex;
-        flex-direction: column;
-        font-size: 1.3rem;
-        color: bisque;
-        grid-area: dat1;
-        text-align: center;
-        padding: .5rem;
-        margin-bottom: 2rem;
-        border: solid whitesmoke;
-    }
-    
-    .datos2, .txtt{
-        display: flex;
-        flex-direction: column;
-        font-size: 1.3rem;
-        color: bisque;
-        grid-area: dat1;
-        text-align: center;
-        margin-bottom: 2rem;
-        padding: .5rem;
-        border: solid whitesmoke;
-        
     }
 
-    .imag-mapa, .imag-sch{
+    .datos1,
+    .txtt {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+        color: bisque;
+        grid-area: dat1;
+        text-align: center;
+        padding: .5rem;
+        margin-bottom: 2rem;
+        border: solid whitesmoke;
+    }
+
+    .datos2,
+    .txtt {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+        color: bisque;
+        grid-area: dat1;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: .5rem;
+        border: solid whitesmoke;
+
+    }
+
+    .imag-mapa,
+    .imag-sch {
         display: flex;
         flex-direction: column;
         text-align: center;
