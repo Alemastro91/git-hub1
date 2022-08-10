@@ -174,7 +174,9 @@ footer{
     background-image: linear-gradient(200deg, #000000 30%, #b82e1f 90%);
     border-radius: 25px;
     grid-area: foot;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content:center;
+   
 }
 
 .map{
@@ -182,6 +184,9 @@ footer{
     flex-direction: column;
     max-width: 15rem;
     max-height: 15rem;
+    align-items:flex-end;
+    justify-content: center;
+
 }
 
 .textFoot {
@@ -189,6 +194,7 @@ footer{
     flex-direction: column;
     font-size: 1.9rem;
     text-align: left;
+    align-items: flex-start;
     justify-content: center;
     color: white;
     padding-left: 1rem;
