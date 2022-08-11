@@ -315,13 +315,13 @@ p {
         text-align: center;
         text-decoration: none;
         color: white;
+        align-content:space-between;
     }
 
     .menuBar ul li {
-        font-size: 2.2rem;
-        text-decoration: none;
-        color: white;
-        hyphenate-character: none;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
     }
 
     .principal,
