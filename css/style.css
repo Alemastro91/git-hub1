@@ -13,6 +13,13 @@ body {
     background-size: 10rem;
 }
 
+main{
+    background-color: #000000;
+    margin: 3rem;
+    padding-top: 3rem; 
+
+}
+
 .tittle {
     font-size: 5rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -54,8 +61,7 @@ nav .bordeBotones li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     line-height: 1rem;
-    padding: 1.2rem;
-    
+    padding: 1.2rem;    
     background-image: url(../img/button1.png);
     background-size: 100%;
     background-position-y: center;
@@ -69,7 +75,6 @@ li,
 .boton4 {
     color: white;
     text-shadow: whitesmoke;
-
 }
 
 .boton1:hover,
@@ -247,6 +252,27 @@ p {
     text-align: center;
 }
 
+/*--------Personajes---------*/
+
+.intro-pers{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+
+.intro-pers, h2{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+.intro-pers, img{
+    max-width: 50rem;
+    max-height: 50rem;
+}
+
 
 /*-----Escritorio -Gird-----*/
 
@@ -315,7 +341,7 @@ p {
         text-align: center;
         text-decoration: none;
         color: white;
-        align-content:space-between;
+        align-content:center
     }
 
     .menuBar ul li {
