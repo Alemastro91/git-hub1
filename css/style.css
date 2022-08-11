@@ -380,7 +380,7 @@ p {
         
     }
 
-    .map{
+    .map iframe{
         display: flex;
         flex-direction: column;
         justify-content: center;
