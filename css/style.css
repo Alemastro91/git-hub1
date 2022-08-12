@@ -10,13 +10,24 @@ body {
     background-color: black;
     background-image: url(../img/background2.png);
     background-repeat: repeat-y repeat-x;
-    background-size: 10rem;
+    background-size: 6rem;
 }
 
 main{
-    background-color: #000000;
-    margin: 3rem;
-    padding-top: 3rem; 
+    margin-bottom: 4rem;
+}
+
+.imgfonde{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    min-height: 40rem;
+    max-height:auto;
+    margin: 0;
+    padding: 0;
+    margin-top: -2rem;
+    opacity: 0.6;
+    border: solid tomato;
 
 }
 
@@ -61,7 +72,7 @@ nav .bordeBotones li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     line-height: 1rem;
-    padding: 1.2rem;    
+    padding: 1.2rem;
     background-image: url(../img/button1.png);
     background-size: 100%;
     background-position-y: center;
@@ -85,10 +96,6 @@ li,
     transition: all 0.3s;
 }
 
-.fondotitulo {
-    display: none;
-}
-
 .intro {
     color: rgb(219, 230, 240);
     font-family: 'Courier New', Courier, monospace;
@@ -110,7 +117,7 @@ h3 {
     font-size: 1.5rem;
 }
 
-.principal{
+.principal {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -127,6 +134,11 @@ h3 {
     padding-left: 1rem;
     padding-right: 1rem;
     grid-area: imag;
+}
+
+.tituloVideo{
+    position:relative;
+    font-size: 2rem;
 }
 
 .video-contendor {
@@ -165,6 +177,7 @@ h3 {
     margin-top: 2rem;
     margin-bottom: 3rem;
     grid-area: reca;
+    position:relative;
 }
 
 .reCap {
@@ -172,7 +185,7 @@ h3 {
     padding-right: 4rem;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: row;
     background-color: #000000;
@@ -180,16 +193,16 @@ footer{
     border-radius: 25px;
     grid-area: foot;
     justify-content: space-between;
-    align-content:center;
-   
+    align-content: center;
+
 }
 
-.map{
+.map {
     display: flex;
     flex-direction: column;
     max-width: 15rem;
     max-height: 15rem;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: center;
 
 }
@@ -211,9 +224,20 @@ footer{
     display: flex;
     flex-direction: column;
     color: antiquewhite;
-    margin: 4rem;
+    margin: 2rem;
+    padding-bottom: 4rem;
     align-items: center;
-    
+
+}
+
+.titmain{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    background-image: linear-gradient(20deg, #000000 30%, #b82e1f 90%);
+    width: 200rem;
+    font-size: 4rem;
+    margin-bottom: 4rem;
 }
 
 .imag-mapa,
@@ -225,6 +249,7 @@ footer{
     margin-right: auto;
     width: 36rem;
     width: 36rem;
+    border-radius: 20px;
 }
 
 h1 {
@@ -238,8 +263,9 @@ p {
     font-size: 1.3rem;
     color: bisque;
     grid-area: dat1;
-    ;
     text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .datos2,
@@ -250,27 +276,35 @@ p {
     color: bisque;
     grid-area: dat2;
     text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 /*--------Personajes---------*/
 
-.intro-pers{
+.personajes{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.intro-pers {
     display: flex;
     flex-direction: column;
     padding-left: 2rem;
     padding-right: 2rem;
-    
-}
-
-.intro-pers, h2{
     text-align: center;
     color: whitesmoke;
-    font-size: 3rem;
-}
-
-.intro-pers, img{
+    font-size: 1.3rem;
     max-width: 50rem;
     max-height: 50rem;
+}
+
+.backst{
+    display: flex;
+    flex-direction: column;
+    margin-top: 26rem;
+    text-align: center;
 }
 
 
@@ -326,11 +360,17 @@ p {
         margin-bottom: 1;
     }
 
-    .intro {
+    .te{
         display: flex;
         flex-direction: column;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         text-align: center;
+        color: aliceblue;
+        font-weight: 545;
+    }
+    
+    .imgfonde{
+        display: none;
     }
 
     nav,
@@ -341,13 +381,14 @@ p {
         text-align: center;
         text-decoration: none;
         color: white;
-        align-content:center
+        margin-right: 0.7rem;
     }
 
     .menuBar ul li {
         display: flex;
         flex-direction: column;
         font-size: 2rem;
+        align-content: center
     }
 
     .principal,
@@ -373,6 +414,7 @@ p {
         display: flex;
         flex-direction: column;
         padding-right: 0;
+        margin-top: 5rem;
     }
 
     .videoResumen {
@@ -384,14 +426,28 @@ p {
         width: 22rem;
     }
 
-    .tituloVideo,
+    .tituloVideo{
+        color: white;
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+
     .reCap {
         display: flex;
         flex-direction: column;
-        font-size: 1.rem;
+        font-size: 1.3rem;
         text-align: center;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+
+    .resumenAbajo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        grid-area: reca;
+        position:relative;
     }
 
     footer {
@@ -401,12 +457,12 @@ p {
         background-image: linear-gradient(200deg, #000000 30%, #b82e1f 90%);
         border-radius: 25px;
         grid-area: foot;
-        align-items:center;
+        align-items: center;
         align-content: space-between;
-        
+
     }
 
-    .map iframe{
+    .map iframe {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -431,6 +487,16 @@ p {
         color: antiquewhite;
         margin: 4rem;
         align-items: center;
+    }
+
+    .titmain{
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: -3.5rem;
+        justify-items: flex-start;
     }
 
     h1 {
@@ -477,5 +543,34 @@ p {
         border-radius: 8%;
     }
 
+    /*--------Personajes---------*/
+
+    .personajes{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .personajes img{
+        align-items: center;
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+
+    .backst{
+        display: flex;
+        flex-direction: column;
+        padding-top: 70rem;
+        text-align: center;
+    }
+
+    .backst iframe{
+        justify-content: center;
+        width: 350px;
+        height: 200px; 
+        padding-right: .8rem;
+        
+    }
 
 }
+
