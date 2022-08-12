@@ -13,16 +13,16 @@ body {
     background-size: 6rem;
 }
 
-main{
+main {
     margin-bottom: 4rem;
 }
 
-.imgfonde{
+.imgfonde {
     display: flex;
     flex-direction: column;
-    position:absolute;
+    position: absolute;
     min-height: 40rem;
-    max-height:auto;
+    max-height: auto;
     margin: 0;
     padding: 0;
     margin-top: -2rem;
@@ -136,8 +136,8 @@ h3 {
     grid-area: imag;
 }
 
-.tituloVideo{
-    position:relative;
+.tituloVideo {
+    position: relative;
     font-size: 2rem;
 }
 
@@ -177,7 +177,7 @@ h3 {
     margin-top: 2rem;
     margin-bottom: 3rem;
     grid-area: reca;
-    position:relative;
+    position: relative;
 }
 
 .reCap {
@@ -230,7 +230,7 @@ footer {
 
 }
 
-.titmain{
+.titmain {
     display: flex;
     flex-direction: column;
     background-color: #000000;
@@ -282,9 +282,9 @@ p {
 
 /*--------Personajes---------*/
 
-.personajes{
+.personajes {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -300,13 +300,12 @@ p {
     max-height: 50rem;
 }
 
-.backst{
+.backst {
     display: flex;
     flex-direction: column;
     margin-top: 26rem;
     text-align: center;
 }
-
 
 /*-----Escritorio -Gird-----*/
 
@@ -360,7 +359,7 @@ p {
         margin-bottom: 1;
     }
 
-    .te{
+    .te {
         display: flex;
         flex-direction: column;
         font-size: 1.3rem;
@@ -368,8 +367,8 @@ p {
         color: aliceblue;
         font-weight: 545;
     }
-    
-    .imgfonde{
+
+    .imgfonde {
         display: none;
     }
 
@@ -426,7 +425,7 @@ p {
         width: 22rem;
     }
 
-    .tituloVideo{
+    .tituloVideo {
         color: white;
         font-weight: 600;
         font-size: 1.6rem;
@@ -447,7 +446,7 @@ p {
         align-items: center;
         text-align: center;
         grid-area: reca;
-        position:relative;
+        position: relative;
     }
 
     footer {
@@ -489,7 +488,7 @@ p {
         align-items: center;
     }
 
-    .titmain{
+    .titmain {
         color: whitesmoke;
         font-weight: 700;
         font-size: 3rem;
@@ -545,32 +544,31 @@ p {
 
     /*--------Personajes---------*/
 
-    .personajes{
+    .personajes {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         align-items: center;
     }
 
-    .personajes img{
+    .personajes img {
         align-items: center;
         max-width: 20rem;
         max-height: 20rem;
     }
 
-    .backst{
+    .backst {
         display: flex;
         flex-direction: column;
         padding-top: 70rem;
         text-align: center;
     }
 
-    .backst iframe{
+    .backst iframe {
         justify-content: center;
         width: 350px;
-        height: 200px; 
+        height: 200px;
         padding-right: .8rem;
-        
+
     }
 
 }
-
